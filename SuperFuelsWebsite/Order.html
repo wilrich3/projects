@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Super Fuels</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/ec19f8e661.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/SuperfuelsLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="Order.html">Order now</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+      </section>       
+<div class="text-box">
+    <h1>Order Now</h1>
+    <p>Place a order by selecting how much diesel you want</p>
+   
+</div>
+
+  <div class="container">
+    <div class="texts">
+    <h2>Order Diesel</h2>
+  </div>
+    <form id="orderForm">
+      <div class="form">
+      <input type="text" placeholder="Name" required><br>
+      <input type="text" placeholder="Surname" required><br>
+      <input type="text" placeholder="Address" required><br><br>
+    </div>
+    
+      <div class="sliderheading"><label for="quantity">Select Quantity of Diesel (Liters):</label></div><br>
+      <div class="sliders"><input class="diesel" type="range" id="quantity" name="quantity" min="" max="20000" value="500" step="100"></div><br>
+      <div class="slidercontent"><output for="quantity" id="Rand">R 0.00</output></div><br>
+      <div class="slidercontent"><output for="quantity" id="quantityOutput">0 Liters</output></div><br>
+      <br>
+    <div>
+      <input class="hero-btn-2" type="submit" value="Place Order">
+    </div>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript to display the selected quantity value
+    const quantityInput = document.getElementById('quantity');
+    const quantityOutput = document.getElementById('quantityOutput');
+    const Rand = document.getElementById('Rand');
+
+    quantityInput.addEventListener('input', function() {
+      quantityOutput.value = `${this.value} Liters`;
+    });
+    quantityInput.addEventListener('input', function() {
+      Rand.value = `R ${this.value*23}`;
+    });
+
+    
+
+    
+    const orderForm = document.getElementById('orderForm');
+    orderForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const selectedQuantity = quantityInput.value;
+      alert(`Order placed for ${selectedQuantity} Liters of diesel!`);
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+<!---------Footer------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>SuperFuels is a leading provider of high-quality fuel solutions since 2017. With a commitment to excellence and reliability, we have been serving a diverse range of industries, including transportation and commercial businesses.<br>
+        Our team of experts is committed to providing the highest quality fuel solutions to our clients.
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by Wilrich Van den Berg</p>
+
+</section>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Super Fuels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/ec19f8e661.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="Home.html"><img src="images/SuperfuelsLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Order.html">Order now</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Welcome To Super Fuels</h1>
+    <p>You can place a order by clicking the button below and filling out your details,<br>Click below!</p>
+    <a href="Order.html" class="hero-btn">Order Now</a>
+
+</div>
+
+   </section>
+   <section class="about-section">
+    <div class="about-content">
+        <h2>About Our Company</h2>
+        <p>Super Fuels is a trusted provider of high-quality fuel solutions, serving industries with dedication and commitment since 2017. Our unwavering focus on excellence, reliability, and customer satisfaction has established us as a leader in the fuel industry.</p>
+        <p>With a team of experienced professionals and innovative approaches, we cater to the diverse fuel needs of transportation and commercial businesses. Our dedication to delivering top-notch services and maintaining the highest industry standards sets us apart.</p>
+        <p>We pride ourselves on providing efficient and tailored fuel solutions, ensuring our clients receive reliable products and exceptional service at every step.</p>
+    </div>
+</section>
+ 
+
+<section class="about-section">
+    <div class="about-content">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="images/Gert.jpg" alt="Gert Van den Berg">
+                <h3>Gert Van den Berg</h3>
+                <p style="color: black;">Position: Head of the Company</p>
+                <p>Gert Van den Berg leads our company with extensive experience in the fuel industry. His vision and leadership drive our commitment to excellence.</p>
+            </div>
+            <div class="member">
+                <img src="images/erika.jpg" alt="Erika Van den Berg">
+                <h3>Erika Van den Berg</h3>
+                <p style="color: black;">Position: Administrative Coordinator</p>
+                <p>Erika Van den Berg meticulously manages all administrative tasks, excels in handling Excel sheets, and ensures the accuracy of every transaction, contributing significantly to our business's smooth operation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!---------Footer------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>SuperFuels is a leading provider of high-quality fuel solutions since 2017. With a commitment to excellence and reliability, we have been serving a diverse range of industries, including transportation and commercial businesses.<br>
+        Our team of experts is committed to providing the highest quality fuel solutions to our clients.
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by Wilrich Van den Berg</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----JavaScript for toggle menu-------->
+<script>
+
+    var NavLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        NavLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        NavLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+
+</html>

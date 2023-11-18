@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Super Fuels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://kit.fontawesome.com/ec19f8e661.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="Home.html"><img src="images/SuperfuelsLogo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="Order.html">Order now</a></li>
+                
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Contact US</h1>
+    <p>Contact us if you have any questions</p>
+
+
+</div>
+
+   </section>
+<section class="contact-section">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>Have any questions or inquiries? Feel free to reach out to us using the information below:</p>
+        <div class="contact-details">
+            <p>Email: Erika30@SuperFuels.com</p>
+            <p>Phone: +27 84 442 3689</p>
+            <p>Address: 10 Sering Ave, Sundra, South Africa</p>
+        </div>
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="faq">
+            <div class="question">
+                <button class="accordion">What products do you offer?</button>
+                <div class="panel">
+                    <p>We offer a range of high-quality fuel products suitable for transportation and commercial businesses, including diesel, gasoline, and biofuels.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="accordion">How can I place an order?</button>
+                <div class="panel">
+                    <p>To place an order, you can fill out our online order form on our website or contact our customer service via email or phone.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="accordion">When does the diesel price change?</button>
+                <div class="panel">
+                    <p>The diesel price changes on the first Wednesday of each month.</p>
+                </div>
+            </div>
+            <div class="question">
+                <button class="accordion">What is the delivery time?</button>
+                <div class="panel">
+                    <p>The delivery time is typically between 1 and 2 business days.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------Footer------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>SuperFuels is a leading provider of high-quality fuel solutions since 2017. With a commitment to excellence and reliability, we have been serving a diverse range of industries, including transportation and commercial businesses.<br>
+        Our team of experts is committed to providing the highest quality fuel solutions to our clients.
+    </p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made by Wilrich Van den Berg</p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----JavaScript for toggle menu-------->
+<script>
+
+    var NavLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        NavLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        NavLinks.style.right = "-200px";
+    }
+
+    
+// JavaScript for FAQ section
+const acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+</script>
+
+</body>
+
+
+</html>
